@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>scroll text animation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section>
+    <p>Scroll to see</p>
+  </section>
+    <div>
+    <h2 data-text="2019">2019</h2>
+  </div>
+    <div>
+    <h2 data-text="2020">2020</h2>
+  </div>
+    <div>
+    <h2 data-text="2021">2021</h2>
+  </div>
+  <div>
+    <h2 data-text="2022">2022</h2>
+  </div>
+   <div>
+    <h2 data-text="2023">2023</h2>
+  </div>
+    <div class="current">
+    <h2 data-text="2024" >2024</h2>
+  </div>
+    <div>
+    <h2 data-text="2025">2025</h2>
+  </div>
+    <div>
+    <h2 data-text="2026">2026</h2>
+  </div>
+    <div>
+    <h2 data-text="2027">2027</h2>
+  </div>
+    <div>
+    <h2 data-text="2028">2028</h2>
+  </div>
+    <div>
+    <h2 data-text="2029">2029</h2>
+  </div>
+    <div>
+    <h2 data-text="2030">2030</h2>
+  </div>
+    <div>
+    <h2 data-text="2031">2031</h2>
+  </div>
+  
+   <section>
+    <p>Thanks for watching</p>
+  </section>
+  
+  
+  
+  
+  <script>
+    
+    window.addEventListener("scroll", ()=>{
+      let item = document.querySelectorAll("h2");
+      
+      for (let i = 0; i < item.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = item[i].getBoundingClientRect().top;
+        
+        
+        if (elementTop < windowHeight - 300) {
+          item[i].classList.add("active")
+        }
+        else{
+          item[i].classList.remove("active")
+        }
+      }
+    })
+  </script>
+</body>
+</html>
