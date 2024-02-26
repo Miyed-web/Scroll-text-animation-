@@ -20,7 +20,7 @@ section{
   
 } section p{
   color: #fff;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 div{
   display: flex;
@@ -32,14 +32,14 @@ h2{
   color: #2e2e2e;
   font-size: 7em;
   line-height: 1em;
-  transition: 1s all ease;
+  transition: .9s all ease-in-out;
 }
 h2::before{
   content: attr(data-text);
   position: absolute;
   color: #fff;
   width: 0%;
-  transition: 1s all ease;
+  transition: .9s all ease-in-out;
   overflow: hidden;
 }
 h2.active::before{
