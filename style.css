@@ -2,6 +2,10 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 body {
   background: #000;
